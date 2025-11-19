@@ -40,4 +40,4 @@ def submit_task(
     )
     if response.status_code != 200:
         raise Exception(f"Failed to submit task: {response.text}")
-    return response.json()
+    return response.text
