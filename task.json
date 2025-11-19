@@ -1,0 +1,18 @@
+{
+    "title": "JustParse: Legal AI - EN",
+    "description": "The goal is to train a specialized legal analysis model designed to detect and identify potentially unfair, predatory, or one-sided clauses within legal documents. The model's objective is to not only flag problematic language but also to provide clear, plain-language explanations for why a clause may be considered unbalanced or non-standard. By referencing established consumer protection principles and common legal vulnerabilities, the model will aim to demystify complex jargon and enhance legal transparency for non-experts.",
+    "task_type": "training",
+    "data": {
+        "training_set_url": "https://fed-ledger-prod-dataset.s3.amazonaws.com/17/training_set.jsonl?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASSFQ745NLT5K57N2%2F20251119%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20251119T071332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8488f46f1929a1dd4268220c819f29be0d6350ff9b1455276f31478d0e8ebd61",
+        "validation_set_url": "https://fed-ledger-prod-dataset.s3.amazonaws.com/17/validation_set.jsonl?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIASSFQ745NLT5K57N2%2F20251119%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20251119T071332Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=5e9f23e65ca4227079b5d9bd0df0bf45f7d52df7d0e30d3a0cf6ffc189e30909",
+        "max_params": 4100000000,
+        "context_length": 1024
+    },
+    "duration_in_seconds": 4241361,
+    "id": 17,
+    "status": "submission_phase",
+    "initialized_at": "2025-11-17T21:54:46.303534",
+    "submission_phase_ends_at": "2026-01-06T23:59:59.303534",
+    "final_validation_ends_at": "2026-01-11T23:59:59.303534",
+    "final_link": null
+}
