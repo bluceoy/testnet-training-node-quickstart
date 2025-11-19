@@ -1,6 +1,6 @@
 import json
 import os
-
+import time
 import requests
 import yaml
 from loguru import logger
@@ -92,6 +92,13 @@ if __name__ == "__main__":
             logger.info("Proceed to the next model...")
         finally:
             # cleanup merged_model and output
-            os.system("rm -rf merged_model")
-            os.system("rm -rf outputs")
+            #os.system("rm -rf merged_model")
+            #os.system("rm -rf outputs")
+            now = int(time.time())
+            cmd1 = "mv merged_model merged_model-%d" % (now)
+            cmd2 = "mv outputs outputs-%d" % (now)
+            #os.system("rm -rf merged_model")
+            #os.system("rm -rf outputs")
+            os.system(cmd1)
+            os.system(cmd2)
             continue
